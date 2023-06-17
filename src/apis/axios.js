@@ -7,6 +7,7 @@ axios.defaults.withCredentials = true;
 axios.defaults.headers.post["Content-Type"] = "application/json";
 axios.defaults.headers.common["X-CSRFToken"] = getCookie("csrftoken");
 
+//edited
 if (process.env.NODE_ENV === "development") {
   axios.defaults.baseURL = "http://localhost:8000/api";
 } else {
